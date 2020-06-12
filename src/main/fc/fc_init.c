@@ -42,9 +42,9 @@
 #include "config/parameter_group_ids.h"
 
 #include "cms/cms.h"
-/*IBHM*/
+/*JJSJ*/
 #include "custom/custom.h"
-/*IBHM*/
+/*JJSJ*/
 #include "drivers/1-wire.h"
 #include "drivers/accgyro/accgyro.h"
 #include "drivers/adc.h"
@@ -148,10 +148,10 @@
 #ifdef USE_HARDWARE_REVISION_DETECTION
 #include "hardware_revision.h"
 #endif
-/*IBHM*/
+/*JJSJ*/
 #include "Euler/EulerController.h"
 #include "Euler/rtwtypes.h"
-/*IBHM*/
+/*JJSJ*/
 
 #ifdef USE_HARDWARE_PREBOOT_SETUP
 extern void initialisePreBootHardware(void);
@@ -695,10 +695,10 @@ void init(void)
         setTaskEnabled(TASK_RPM_FILTER, true);
     }
 #endif
-/*IBHM*/
+/*JJSJ*/
 customSerialTest_Init();
 EulerController_initialize();
 systemState |= SYSTEM_STATE_READY;
-/*IBHM*/
+/*JJSJ*/
   
 }

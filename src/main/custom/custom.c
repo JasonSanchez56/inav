@@ -9,9 +9,9 @@
 #include <string.h>
 #define MAXIMUM_STRING_SIZE 50
 
-/*IBHM*/
+/*JJSJ*/
 void rt_OneStep(void);
-/*IBHM*/
+/*JJSJ*/
 static serialPort_t * serialPort = NULL;
 
 
@@ -19,7 +19,7 @@ void customSerialTest (timeUs_t currentTimeUs){
     UNUSED(currentTimeUs);
    char inBuf[MAXIMUM_STRING_SIZE];
     char outBuf[MAXIMUM_STRING_SIZE];
-    uint8_t i = 0;
+    uint8_t i = 10;
     double serialValue = (double)0.0;
     bool startReading = false;
 
@@ -51,7 +51,7 @@ void customSerialTest_Init (void){
     //serialPort = uartOpen(USART2, NULL, NULL, baudRates[BAUD_115200], MODE_TX, SERIAL_NOT_INVERTED | SERIAL_STOPBITS_1 | SERIAL_PARITY_NO);
 }
 
-/*IBHM*/
+/*JJSJ*/
 void rt_OneStep(void)
 {
   static boolean_T OverrunFlag = false;
@@ -82,4 +82,4 @@ void rt_OneStep(void)
   /* Restore FPU context here (if necessary) */
   /* Enable interrupts here */
 }
-/*IBHM*/
+/*JJSJ*/
