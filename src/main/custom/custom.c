@@ -19,7 +19,7 @@ void customSerialTest (timeUs_t currentTimeUs){
     UNUSED(currentTimeUs);
    char inBuf[MAXIMUM_STRING_SIZE];
     char outBuf[MAXIMUM_STRING_SIZE];
-    uint8_t i = 10;
+    uint8_t i = 0;
     double serialValue = (double)0.0;
     bool startReading = false;
 
